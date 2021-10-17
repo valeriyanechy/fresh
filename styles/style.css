@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font: 400 18px/1.6 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
+  color: rgba(10, 25, 2, 0.7);
+}
+
+ul, ol, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(10, 25, 2, 0.7);
+  transition: all 0.3s;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1178px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: block;
+}
+
+.header {
+  padding: 30px 0;
+}
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo img {
+  max-width: 164px;
+  max-height: 65px;
+}
+.header__nav-list {
+  display: flex;
+  align-items: center;
+}
+.header__nav-item {
+  padding: 0 17px;
+}
+
+.center {
+  padding: 61px 0;
+}
+.center__wrap {
+  letter-spacing: -0.36em;
+  margin: 61px auto;
+}
+.center__col {
+  width: 50%;
+  padding: 0 10px;
+  display: inline-block;
+  letter-spacing: normal;
+  vertical-align: top;
+  text-align: left;
+}
+.center__body {
+  max-width: 588px;
+}
+.center__title {
+  margin-bottom: 17px;
+}
+.center__title h2 {
+  font: 600 49px/1.3 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
+  color: #0A1902;
+}
+.center__info {
+  padding-right: 34px;
+}
+.center__info p {
+  font: 400 18px/1.6 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
+  color: rgba(10, 25, 2, 0.7);
+}
+.center__card, .center__card-2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 120px;
+  margin: 25px 0;
+  counter-reset: circle-counter;
+}
+.center__card:before, .center__card-2:before {
+  counter-increment: circle-counter;
+  content: counter(circle-counter);
+  box-shadow: 0 10px 20px rgba(22, 52, 7, 0.5);
+  background: #FFFFFF;
+  font: 700 35px/1.4 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
+  color: #59BE29;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 67px;
+  height: 67px;
+  left: 0;
+  top: 50%;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+.center__card-body h3, .center__card-2-body h3 {
+  font: 500 25px/1.5 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
+  color: #0A1902;
+  padding-bottom: 1px;
+}
+.center__card-body p, .center__card-2-body p {
+  font: 400 18px/1.6 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
+  color: rgba(10, 25, 2, 0.7);
+  padding-top: 1px;
+}
+.center__card-2:last-child {
+  margin-bottom: 0;
+}
+.center__wrap-img {
+  letter-spacing: -0.36em;
+  margin: 0 auto;
+}
+.center__col-img {
+  width: 33.3333333333%;
+  padding: 15px;
+  display: inline-block;
+  letter-spacing: normal;
+  vertical-align: top;
+  border: 1px solid;
+  border-left: 0;
+  border-top: 0;
+  border-bottom: 1px;
+  border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #59be29 100%, rgba(0, 0, 0, 0) 0%);
+  border-image-slice: 1;
+}
+.center__col-img-link {
+  display: block;
+  padding-bottom: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.center__col-img-link img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.3s;
+}
+.center__col-img-link:hover {
+  transform: scale(0.9);
+}
+.center__col-img:last-child {
+  border-right: 0;
+  border-bottom: 0;
+}
+.center__col-img1 {
+  width: 33.3333333333%;
+  padding: 15px;
+  display: inline-block;
+  letter-spacing: normal;
+  vertical-align: top;
+  border: 1px solid;
+  border-left: 0;
+  border-bottom: 0;
+  border-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, #59be29 100%, rgba(0, 0, 0, 0) 0%);
+  border-image-slice: 1;
+}
+.center__col-img1:last-child {
+  border-right: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
