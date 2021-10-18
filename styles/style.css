@@ -98,13 +98,15 @@ a {
   font: 400 18px/1.6 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
   color: rgba(10, 25, 2, 0.7);
 }
+.center__card-block {
+  counter-reset: circle-counter;
+}
 .center__card, .center__card-2 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-left: 120px;
+  padding-left: 100px;
   margin: 25px 0;
-  counter-reset: circle-counter;
 }
 .center__card:before, .center__card-2:before {
   counter-increment: circle-counter;
@@ -116,13 +118,17 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   width: 67px;
   height: 67px;
+  border-radius: 50%;
   left: 0;
   top: 50%;
-  border-radius: 50%;
-  transform: translateX(-50%);
+}
+.center__card-body, .center__card-2-body {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding-left: 87px;
 }
 .center__card-body h3, .center__card-2-body h3 {
   font: 500 25px/1.5 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
@@ -141,26 +147,20 @@ a {
   letter-spacing: -0.36em;
   margin: 0 auto;
 }
-.center__col-img {
-  width: 33.3333333333%;
+.center__col-img, .center__col-img1 {
   padding: 15px;
+  width: 33.3333333333%;
   display: inline-block;
   letter-spacing: normal;
   vertical-align: top;
-  border: 1px solid;
-  border-left: 0;
-  border-top: 0;
-  border-bottom: 1px;
-  border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #59be29 100%, rgba(0, 0, 0, 0) 0%);
-  border-image-slice: 1;
 }
-.center__col-img-link {
-  display: block;
+.center__col-img-link, .center__col-img1-link {
   padding-bottom: 100%;
-  position: relative;
   overflow: hidden;
+  position: relative;
+  display: block;
 }
-.center__col-img-link img {
+.center__col-img-link img, .center__col-img1-link img {
   position: absolute;
   top: 0;
   left: 0;
@@ -168,27 +168,8 @@ a {
   object-fit: cover;
   transition: all 0.3s;
 }
-.center__col-img-link:hover {
+.center__col-img-link:hover, .center__col-img1-link:hover {
   transform: scale(0.9);
-}
-.center__col-img:last-child {
-  border-right: 0;
-  border-bottom: 0;
-}
-.center__col-img1 {
-  width: 33.3333333333%;
-  padding: 15px;
-  display: inline-block;
-  letter-spacing: normal;
-  vertical-align: top;
-  border: 1px solid;
-  border-left: 0;
-  border-bottom: 0;
-  border-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, #59be29 100%, rgba(0, 0, 0, 0) 0%);
-  border-image-slice: 1;
-}
-.center__col-img1:last-child {
-  border-right: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

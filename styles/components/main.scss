@@ -37,22 +37,17 @@
         }
     }
 
-    // &__block {
-    //     display: inline-block;
-    //     position: relative;
-    //     list-style: none;
-    //     padding-left: 35px;
-    //     vertical-align: middle;
-    // }
+    &__card-block {
+        counter-reset: circle-counter;
+    }
 
     &__card, 
     &__card-2 {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        padding-left: 120px;
+        padding-left: 100px;
         margin: 25px 0;
-        counter-reset: circle-counter;
 
         &:before {
             counter-increment: circle-counter;
@@ -64,17 +59,20 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            text-align: center;
             width: 67px;
             height: 67px;
+            border-radius: 50%;
             left: 0;
             top: 50%;
-            border-radius: 50%;
-            transform: translateX(-50%);
+            // transform: translateY(-50%);
         }
-        
-        &-body {
             
+        &-body {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            padding-left: 87px;
+
             h3{
                 font: $h3-font;
                 color: $title-color;
@@ -103,24 +101,19 @@
         margin: 0 auto;
     }
 
-    &__col-img {
-        width: calc(100% / 3);
+    &__col-img,
+    &__col-img1 {
         padding: 15px;
+        width: calc(100% / 3);
         display: inline-block;
         letter-spacing: normal;
         vertical-align: top;
-        border: 1px solid;
-        border-left: 0;
-        border-top: 0;
-        border-bottom: 1px;
-        border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(89, 190, 41, 1) 100%, rgba(0, 0, 0, 0) 0%);
-        border-image-slice: 1;
 
         &-link {
-            display: block;
             padding-bottom: 100%;
-            position: relative;
             overflow: hidden;
+            position: relative;
+            display: block;
 
             img {
                 position: absolute;
@@ -136,27 +129,5 @@
             }
         }
 
-        &:last-child {
-            border-right: 0;
-            border-bottom: 0;
-        }
-
-    }
-
-    &__col-img1 {
-        width: calc(100% / 3);
-        padding: 15px;
-        display: inline-block;
-        letter-spacing: normal;
-        vertical-align: top;
-        border: 1px solid;
-        border-left: 0;
-        border-bottom: 0;
-        border-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(89, 190, 41, 1) 100%, rgba(0, 0, 0, 0) 0%);
-        border-image-slice: 1;
-
-        &:last-child {
-            border-right: 0;
-        }
     }
 }
