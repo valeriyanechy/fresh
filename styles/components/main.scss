@@ -101,13 +101,25 @@
         margin: 0 auto;
     }
 
-    &__col-img,
-    &__col-img1 {
+    &__block-img1 {
+
+        &::first-line {
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: radial-gradient(ellipse at center, #59BE29, transparent) top/95% 1px no-repeat;
+        }
+
+    }
+
+    &__card-img,
+    &__card-img1 {
         padding: 15px;
         width: calc(100% / 3);
         display: inline-block;
         letter-spacing: normal;
         vertical-align: top;
+        border-right: 1px solid #59BE29;
 
         &-link {
             padding-bottom: 100%;
@@ -129,5 +141,10 @@
             }
         }
 
+        &:last-child {
+            border: 0;
+        }
+
     }
+
 }
