@@ -320,22 +320,27 @@ input::placeholder {
   color: rgba(10, 25, 2, 0.7);
 }
 .center__card-block {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around;
   counter-reset: circle-counter;
 }
-.center__card, .center__card-2 {
+.center__card {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-left: 100px;
-  margin: 25px 0;
+  position: relative;
+  margin: 20px 0;
 }
-.center__card:before, .center__card-2:before {
+.center__card:before {
   counter-increment: circle-counter;
   content: counter(circle-counter);
   box-shadow: 0 10px 20px rgba(22, 52, 7, 0.5);
   background: #FFFFFF;
   font: 700 35px/1.4 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
   color: #59BE29;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -344,24 +349,26 @@ input::placeholder {
   border-radius: 50%;
   left: 0;
   top: 50%;
+  transform: translateY(-50%);
 }
-.center__card-body, .center__card-2-body {
+.center__card-body {
   display: flex;
   flex-direction: column;
-  position: absolute;
   padding-left: 87px;
 }
-.center__card-body h3, .center__card-2-body h3 {
+.center__card-body h3 {
   font: 500 25px/1.5 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
   color: #0A1902;
   padding-bottom: 1px;
+  max-width: 215px;
 }
-.center__card-body p, .center__card-2-body p {
+.center__card-body p {
   font: 400 18px/1.6 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
   color: rgba(10, 25, 2, 0.7);
   padding-top: 1px;
+  max-width: 349px;
 }
-.center__card-2:last-child {
+.center__card:last-child {
   margin-bottom: 0;
 }
 .center__wrap-img {

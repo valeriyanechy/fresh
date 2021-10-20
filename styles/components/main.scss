@@ -38,16 +38,19 @@
     }
 
     &__card-block {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-around;
         counter-reset: circle-counter;
     }
 
-    &__card, 
-    &__card-2 {
+    &__card {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        padding-left: 100px;
-        margin: 25px 0;
+        position: relative;
+        margin: 20px 0;
 
         &:before {
             counter-increment: circle-counter;
@@ -56,6 +59,7 @@
             background: $white;
             font: $h4-font;
             color: $green;
+            position: absolute;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -64,36 +68,34 @@
             border-radius: 50%;
             left: 0;
             top: 50%;
-            // transform: translateY(-50%);
+            transform: translateY(-50%);
         }
             
         &-body {
             display: flex;
             flex-direction: column;
-            position: absolute;
             padding-left: 87px;
 
             h3{
                 font: $h3-font;
                 color: $title-color;
                 padding-bottom: 1px;
+                max-width: 215px;
             }
 
             p {
                 font: $main-font;
                 color: $text-color;
                 padding-top: 1px;
+                max-width: 349px;
             }
 
         }
 
-    }
-
-    &__card-2 {
-
         &:last-child {
             margin-bottom: 0;
         }
+
     }
 
     &__wrap-img {
