@@ -1,3 +1,34 @@
 .btn {
-    display: block;
+    font-family: $main-font-family;
+    font-size: 18px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    height: 55px;
+    font-weight: 500;
+    box-shadow: 0px 10px 20px rgba(22, 52, 7, 0.1);
+    border-radius: 20px 80px;
+    padding: 5px 44px;
+    border: 1px solid $primary-color;
+    color: $white;
+    background-color: $primary-color;
+    transition: $trs;
+
+    &:hover {
+        box-shadow: 0px 10px 20px rgba(22, 52, 7, 0.4);
+    }
+
+    &--ghost {
+        color: $primary-color;
+        background-color: $white;
+        border: 1px solid rgba(89, 190, 41, 0.3);
+    }
+
+    &--normal {
+        height: 59px;
+        padding: 5px 30px;
+        border-radius: 10px;
+    }
 }

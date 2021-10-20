@@ -1,0 +1,23 @@
+input {
+    font-family: $main-font-family;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: $circle-box-shadow;
+    border-radius: 10px;
+    border: none;
+    background-color: $white;
+    outline: none;
+    display: block;
+    height: 59px;
+    width: 100%;
+    padding: 0 30px;
+    transition: $trs;
+
+    &:focus {
+        box-shadow: 0 10px 20px rgba(22, 52, 7, 0.1);
+    }
+
+    &::placeholder {
+        color: rgba($title-color, .2)
+    }
+}
