@@ -1,5 +1,5 @@
 .footer {
-    padding: 70px 0 80px;
+    padding: 86px 0 81px;
 
     &__wrap {
         display: flex;
@@ -10,5 +10,36 @@
     &__col2,
     &__col3 {
         width: 33.33%;
+    }
+
+    &__col1 {
+        padding-bottom: 23px;
+    }
+
+    &__logo {
+        line-height: 0;
+
+        img {
+            max-width: 164px;
+            max-height: 65px;
+        }
+    }
+
+    &__body {
+        margin-top: 26px;
+    }
+
+    &__col2 {
+        padding: 26px 50px 0;
+    }
+
+    &__nav {
+        max-width: 289px;
+        display: flex;
+        flex-wrap: wrap;
+
+        &-item {
+            width: 50%;
+        }
     }
 }
