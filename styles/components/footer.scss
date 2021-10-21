@@ -1,0 +1,14 @@
+.footer {
+    padding: 70px 0 80px;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__col1,
+    &__col2,
+    &__col3 {
+        width: 33.33%;
+    }
+}

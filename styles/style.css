@@ -362,12 +362,6 @@ input::placeholder {
   padding-bottom: 1px;
   max-width: 215px;
 }
-.center__card-body p {
-  font: 400 18px/1.6 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
-  color: rgba(10, 25, 2, 0.7);
-  padding-top: 1px;
-  max-width: 349px;
-}
 .center__card:last-child {
   margin-bottom: 0;
 }
@@ -562,6 +556,17 @@ input::placeholder {
 .subscribe__message {
   margin-right: 30px;
   max-width: 258px;
+}
+
+.footer {
+  padding: 70px 0 80px;
+}
+.footer__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__col1, .footer__col2, .footer__col3 {
+  width: 33.33%;
 }
 
 /*# sourceMappingURL=style.css.map */
