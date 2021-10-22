@@ -1,23 +1,40 @@
 .footer {
-    padding: 86px 0 81px;
+    padding: 86px 0 71px;
+    position: relative;
+
+        &:before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 10%, rgba(89, 190, 41, 0.3) 50%, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0) 0%);
+        }
 
     &__wrap {
         display: flex;
         justify-content: space-between;
+        margin: 0 10px;
     }
 
-    &__col1,
-    &__col2,
-    &__col3 {
-        width: 33.33%;
+    &__col {
+        padding: 0 10px;
+
+        &:first-child {
+            padding-right: 50px;
+        }
     }
 
-    &__col1 {
-        padding-bottom: 23px;
+    &__body {
+        margin-bottom: 23px;
+        padding-right: 50px;
+        max-width: 565px;
     }
 
     &__logo {
         line-height: 0;
+        margin-bottom: 26px;
 
         img {
             max-width: 164px;
@@ -25,21 +42,90 @@
         }
     }
 
-    &__body {
-        margin-top: 26px;
-    }
-
-    &__col2 {
-        padding: 26px 50px 0;
-    }
-
     &__nav {
-        max-width: 289px;
         display: flex;
         flex-wrap: wrap;
 
         &-item {
             width: 50%;
+            margin-bottom: 10px;
+
+            &-title {
+                margin-bottom: 20px;
+                font: $h3-font;
+                color: $title-color;
+            }
+
+            &-link {
+
+                &:hover {
+                    color: $green;
+                }
+            }
+
+            &:nth-child(even) {
+                padding: 0;
+            }
+        }
+    }
+
+    &__social {
+        padding-right: 25px;
+        letter-spacing: $letter-spc;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            content: '';
+            z-index: -1;
+            width: 201px;
+            height: 245px;
+            background-image: url(../../img/cherry-footer.png);
+            background-size: cover;
+            bottom: 0;
+            right: 0;
+            top: -30px;
+            left: 185px;
+        }
+
+        &-title {
+            letter-spacing: normal;
+            margin-bottom: 8px;
+            padding: 0 15px;
+
+            h3 {
+                font: $h3-font;
+                color: $title-color;
+            }
+        }
+
+        &-socials {
+            display: flex;
+        }
+
+        &-link {
+            width: 33.33%;
+            display: flex;
+            letter-spacing: normal;
+            vertical-align: top;
+        }
+
+        &-link-img {
+            overflow: hidden;
+            display: block;
+
+            img {
+                top: 0;
+                left: 0;
+                width: 70px;
+                height: 70px;
+                object-fit: cover;
+                transition: all 0.3s;
+            }
+
+            &:hover {
+                transform: scale(1.2);
+            }
         }
     }
 }

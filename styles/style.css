@@ -559,38 +559,111 @@ input::placeholder {
 }
 
 .footer {
-  padding: 86px 0 81px;
+  padding: 86px 0 71px;
+  position: relative;
+}
+.footer:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 10%, rgba(89, 190, 41, 0.3) 50%, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0) 0%);
 }
 .footer__wrap {
   display: flex;
   justify-content: space-between;
+  margin: 0 10px;
 }
-.footer__col1, .footer__col2, .footer__col3 {
-  width: 33.33%;
+.footer__col {
+  padding: 0 10px;
 }
-.footer__col1 {
-  padding-bottom: 23px;
+.footer__col:first-child {
+  padding-right: 50px;
+}
+.footer__body {
+  margin-bottom: 23px;
+  padding-right: 50px;
+  max-width: 565px;
 }
 .footer__logo {
   line-height: 0;
+  margin-bottom: 26px;
 }
 .footer__logo img {
   max-width: 164px;
   max-height: 65px;
 }
-.footer__body {
-  margin-top: 26px;
-}
-.footer__col2 {
-  padding: 26px 50px 0;
-}
 .footer__nav {
-  max-width: 289px;
   display: flex;
   flex-wrap: wrap;
 }
 .footer__nav-item {
   width: 50%;
+  margin-bottom: 10px;
+}
+.footer__nav-item-title {
+  margin-bottom: 20px;
+  font: 500 25px/1.5 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
+  color: #0A1902;
+}
+.footer__nav-item-link:hover {
+  color: #59BE29;
+}
+.footer__nav-item:nth-child(even) {
+  padding: 0;
+}
+.footer__social {
+  padding-right: 25px;
+  letter-spacing: -0.36em;
+  position: relative;
+}
+.footer__social:before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  width: 201px;
+  height: 245px;
+  background-image: url(../../img/cherry-footer.png);
+  background-size: cover;
+  bottom: 0;
+  right: 0;
+  top: -30px;
+  left: 185px;
+}
+.footer__social-title {
+  letter-spacing: normal;
+  margin-bottom: 8px;
+  padding: 0 15px;
+}
+.footer__social-title h3 {
+  font: 500 25px/1.5 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
+  color: #0A1902;
+}
+.footer__social-socials {
+  display: flex;
+}
+.footer__social-link {
+  width: 33.33%;
+  display: flex;
+  letter-spacing: normal;
+  vertical-align: top;
+}
+.footer__social-link-img {
+  overflow: hidden;
+  display: block;
+}
+.footer__social-link-img img {
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  transition: all 0.3s;
+}
+.footer__social-link-img:hover {
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=style.css.map */
