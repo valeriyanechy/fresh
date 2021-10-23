@@ -571,17 +571,14 @@ input::placeholder {
   height: 1px;
   background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 10%, rgba(89, 190, 41, 0.3) 50%, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0) 0%);
 }
-.footer__img {
-  position: relative;
-}
 .footer__img-wrap {
   position: absolute;
-  width: 100%;
   z-index: -1;
-  top: -30px;
+  top: 53px;
+  right: -10px;
   transform: translateY(-50%);
 }
-.footer__decor {
+.footer__img-decor {
   position: absolute;
   right: 40px;
   max-width: 201px;
