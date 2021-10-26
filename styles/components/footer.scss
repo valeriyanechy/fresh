@@ -101,27 +101,12 @@
 
         &-socials {
             display: flex;
+            justify-content: space-between;
         }
 
-        &-link {
-            width: 33.33%;
+        &-item {
             display: flex;
-            letter-spacing: normal;
-            vertical-align: top;
-        }
-
-        &-link-img {
-            overflow: hidden;
-            display: block;
-
-            img {
-                top: 0;
-                left: 0;
-                width: 70px;
-                height: 70px;
-                object-fit: cover;
-                transition: all 0.3s;
-            }
+            transition: $trs;
 
             &:hover {
                 transform: scale(1.2);
