@@ -652,5 +652,9 @@ input::placeholder {
 .footer__social-item:hover {
   transform: scale(1.2);
 }
+.footer__social-item-facebook, .footer__social-item-instagram, .footer__social-item-twitter {
+  width: 85px;
+  height: 85px;
+}
 
 /*# sourceMappingURL=style.css.map */
