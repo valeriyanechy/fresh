@@ -3,7 +3,7 @@
 
     &__wrap {
         letter-spacing: $letter-spc;
-        margin: 61px auto;
+        margin: 60px auto;
     }
 
     &__col {
@@ -161,4 +161,59 @@
         }
     }
 
+}
+
+@media(max-width: 768px) {
+    .center {
+        padding: 0 0 60px;
+
+        &__body {
+            max-width: 384px;
+        }
+
+        &__title {
+            h2 {
+                font-size: 40px;
+            }
+        }
+
+        &__info {
+            p {
+                font-size: 15px;
+            }
+        }
+
+        &__card {
+            margin: 15px 0;
+
+            &:before {
+                font-size: 30px;
+                width: 55px;
+                height: 55px;
+            }
+            
+            &-body {
+                padding-left: 80px;
+
+                h3{
+                    font-size: 20px;
+                    max-width: 200px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        &__wrap-img {
+            &:before {
+                height: 520px;
+            }
+
+            &:after {
+                height: 520px;
+            }
+        }
+    }
 }

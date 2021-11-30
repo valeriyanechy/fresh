@@ -92,3 +92,27 @@
         margin-bottom: 30px;
     }
 }
+
+@media(max-width: 768px) {
+    .product {
+        &__raiting {
+            img {
+                max-width: 90px;
+            }
+        }
+
+        &__price {
+            font-size: 25px;
+        }
+
+        &__descr {
+            margin-bottom: 25px;
+        }
+
+        &__btn {
+            a {
+                font-size: 15px;
+            }
+        }
+    }
+}

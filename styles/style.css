@@ -187,7 +187,7 @@ input::placeholder {
   right: -27%;
   transform: translateY(-50%);
 }
-.hero__img-bg {
+.hero__decor {
   width: 100%;
 }
 .hero__decor-1, .hero__decor-2, .hero__decor-3 {
@@ -202,8 +202,8 @@ input::placeholder {
 .hero__decor-2 {
   top: 50%;
   left: 22%;
-  max-width: 107;
-  max-height: 56;
+  max-width: 107px;
+  max-height: 56px;
 }
 .hero__decor-3 {
   top: 15%;
@@ -212,6 +212,63 @@ input::placeholder {
   max-height: 109px;
 }
 
+@media (max-width: 1024px) {
+  .hero__info {
+    max-width: 512px;
+  }
+  .hero__decor {
+    width: 95%;
+  }
+  .hero__decor-1 {
+    right: 20%;
+    max-width: 100px;
+    max-height: 80px;
+  }
+  .hero__decor-2 {
+    left: 20%;
+    max-width: 95px;
+    max-height: 50px;
+  }
+  .hero__decor-3 {
+    max-width: 150px;
+    max-height: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .hero__info {
+    width: 50%;
+  }
+  .hero__label {
+    font: 500 25px/1.5 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
+  }
+  .hero__title {
+    font: 600 85px/0.9 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
+  }
+  .hero__descr {
+    font: 400 15px/1.6 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
+    max-width: 400px;
+  }
+  .hero__img-wrap {
+    width: 205%;
+    top: 55%;
+    right: -33%;
+  }
+  .hero__decor {
+    width: 95%;
+  }
+  .hero__decor-1 {
+    max-width: 60px;
+    max-height: 40px;
+  }
+  .hero__decor-2 {
+    max-width: 65px;
+    max-height: 28px;
+  }
+  .hero__decor-3 {
+    max-width: 965x;
+    max-height: 55px;
+  }
+}
 .stats {
   padding: 60px 0;
 }
@@ -287,12 +344,54 @@ input::placeholder {
   border-bottom: 2px solid #59BE29;
 }
 
+@media (max-width: 768px) {
+  .stats__col {
+    width: 50%;
+    padding: 0 20px;
+  }
+  .stats__img {
+    max-width: 100%;
+  }
+  .stats__title {
+    font: 600 40px/1.3 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
+    max-width: 390px;
+  }
+  .stats__title:before {
+    width: 100px;
+    height: 45px;
+  }
+  .stats__descr {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+  .stats__box {
+    margin: -10px -10px;
+  }
+  .stats__item {
+    padding: 10px 0px;
+    padding-left: 65px;
+  }
+  .stats__item:before {
+    left: 5%;
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    font: 700 25px/1.4 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
+  }
+  .stats__number {
+    max-width: 100px;
+    font-size: 30px;
+  }
+  .stats__label {
+    font-size: 15px;
+  }
+}
 .center {
   padding: 61px 0;
 }
 .center__wrap {
   letter-spacing: -0.36em;
-  margin: 61px auto;
+  margin: 60px auto;
 }
 .center__col {
   width: 50%;
@@ -424,6 +523,44 @@ input::placeholder {
   transform: scale(0.9);
 }
 
+@media (max-width: 768px) {
+  .center {
+    padding: 0 0 60px;
+  }
+  .center__body {
+    max-width: 384px;
+  }
+  .center__title h2 {
+    font-size: 40px;
+  }
+  .center__info p {
+    font-size: 15px;
+  }
+  .center__card {
+    margin: 15px 0;
+  }
+  .center__card:before {
+    font-size: 30px;
+    width: 55px;
+    height: 55px;
+  }
+  .center__card-body {
+    padding-left: 80px;
+  }
+  .center__card-body h3 {
+    font-size: 20px;
+    max-width: 200px;
+  }
+  .center__card-body p {
+    font-size: 15px;
+  }
+  .center__wrap-img:before {
+    height: 520px;
+  }
+  .center__wrap-img:after {
+    height: 520px;
+  }
+}
 .product {
   padding: 60px 0 70px;
 }
@@ -505,6 +642,20 @@ input::placeholder {
   margin-bottom: 30px;
 }
 
+@media (max-width: 768px) {
+  .product__raiting img {
+    max-width: 90px;
+  }
+  .product__price {
+    font-size: 25px;
+  }
+  .product__descr {
+    margin-bottom: 25px;
+  }
+  .product__btn a {
+    font-size: 15px;
+  }
+}
 .subscribe {
   padding: 70px 0 100px;
 }
@@ -559,6 +710,15 @@ input::placeholder {
   max-width: 258px;
 }
 
+@media (max-width: 768px) {
+  .subscribe__img {
+    max-width: 95%;
+    max-height: 100%;
+  }
+  .subscribe__title {
+    font-size: 45px;
+  }
+}
 .footer {
   padding: 86px 0 71px;
   position: relative;
@@ -655,6 +815,66 @@ input::placeholder {
 .footer__social-item-facebook, .footer__social-item-instagram, .footer__social-item-twitter {
   width: 85px;
   height: 85px;
+}
+
+@media (max-width: 1024px) {
+  .footer__img-wrap {
+    top: 90px;
+    right: -30px;
+  }
+  .footer__img-decor {
+    right: 0px;
+    max-width: 180px;
+    max-height: 210px;
+  }
+  .footer__social-item-facebook, .footer__social-item-instagram, .footer__social-item-twitter {
+    width: 75px;
+    height: 75px;
+  }
+}
+@media (max-width: 768px) {
+  .footer__col {
+    padding: 0 5px;
+  }
+  .footer__col:first-child {
+    padding-right: 25px;
+  }
+  .footer__body {
+    padding-right: 25px;
+    max-width: 245px;
+  }
+  .footer__text {
+    font-size: 15px;
+  }
+  .footer__nav-item-title {
+    margin-bottom: 10px;
+    font-size: 23px;
+  }
+  .footer__nav-item-link {
+    font-size: 15px;
+  }
+  .footer__social {
+    padding-right: 20px;
+  }
+  .footer__social-title {
+    padding: 0 15px;
+  }
+  .footer__social-title h3 {
+    font-size: 23px;
+  }
+  .footer__social-item-facebook, .footer__social-item-instagram, .footer__social-item-twitter {
+    width: 70px;
+    height: 70px;
+  }
+  .footer__img-wrap {
+    top: 190px;
+    right: 20px;
+  }
+  .footer__img-decor {
+    right: 30px;
+    max-width: 200px;
+    max-height: 210px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
