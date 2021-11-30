@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./styles/style.css">
     <title>Fresh</title>
 </head>
@@ -38,32 +40,74 @@
                 </div>
             </div>
         </header>
-
         <div class="hero">
             <div class="container">
-                <div class="hero__wrap">
-                    <div class="hero__info">
-                        <span class="hero__label">fresh fruit for you</span>
-                        <h1 class="hero__title">Eat as you want</h1>
-                        <p class="hero__descr">Fruit and vegetables should be an important part of your daily diet. They are naturally good and contain vitamins and
-                        minerals that can help to keep you healthy. .</p>
-                        <div class="hero__btns">
-                            <div class="hero__btn">
-                                <a href="#" class="btn">Add To Cart</a>
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="hero__wrap">
+                            <div class="hero__info">
+                                <span class="hero__label">fresh fruit for you</span>
+                                <h1 class="hero__title">Eat as you want</h1>
+                                <p class="hero__descr">Fruit and vegetables should be an important part of your daily diet. They are naturally
+                                    good and contain vitamins and
+                                    minerals that can help to keep you healthy.</p>
+                                <div class="hero__btns">
+                                    <div class="hero__btn">
+                                        <a href="#" class="btn">Add To Cart</a>
+                                    </div>
+                                    <div class="hero__btn">
+                                        <a href="#" class="btn btn--ghost">Learn More</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="hero__btn">
-                                <a href="#" class="btn btn--ghost">Learn More</a>
+                            <div class="hero__img">
+                                <div class="hero__img-wrap">
+                                    <img src="./img/hero-bcg.png" alt="" class="hero__decor">
+                                    <img src="./img/hero-ant.png" alt="" class="hero__decor-1">
+                                    <img src="./img/hero-ant-2.png" alt="" class="hero__decor-2">
+                                    <img src="./img/hero-cherry.png" alt="" class="hero__decor-3">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="hero__img">
-                        <div class="hero__img-wrap">
-                            <img src="./img/hero-bcg.png" alt="" class="hero__decor">
-                            <img src="./img/hero-ant.png" alt="" class="hero__decor-1">
-                            <img src="./img/hero-ant-2.png" alt="" class="hero__decor-2">
-                            <img src="./img/hero-cherry.png" alt="" class="hero__decor-3">
+                    <div class="swiper-slide">
+                        <div class="hero__wrap">
+                            <div class="hero__img">
+                                <div class="hero__img-wrap-2">
+                                    <img src="./img/fruits.jpeg" alt="" class="hero__decor-4">
+                                </div>
+                            </div>
+                            <div class="hero__info-2">
+                                <h1 class="hero__title-2">Choose your fruits wisely</h1>
+                                <p class="hero__descr">You only need to know what fruits you wish to have at your place, and we deliver them to you.</p>
+                                <div class="hero__btns">
+                                    <div class="hero__btn">
+                                        <a href="#" class="btn">Discover</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="swiper-slide">
+                        <div class="hero__wrap">
+                            <div class="hero__img">
+                                <div class="hero__img-wrap-3">
+                                    <img src="./img/delivery-guy.png" alt="" class="hero__decor-5">
+                                </div>
+                            </div>
+                            <div class="hero__info-3">
+                                <h1 class="hero__title-3">Enjoy our free delivery</h1>
+                                <p class="hero__descr">We deliver worldwide and it's FREE!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-controls">
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
         </div>
@@ -394,5 +438,6 @@
             </div>
         </footer>
     </div>
+    <script src="./slider.js"></script>
 </body>
 </html>

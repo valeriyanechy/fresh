@@ -1,0 +1,37 @@
+.swiper {
+    &-wrapper {
+        display: flex;
+    }
+
+    &-controls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 70px;
+    }
+
+    &-pagination {
+        width: auto;
+        line-height: 0;
+        padding: 0px 50px;
+        color: $green;
+
+        &-bullet {
+            width: 75px;
+            height: 5px;
+            background-color: $green;
+            border-radius: 10px;
+            margin: 0 1.5px;
+        }
+    }
+
+    &-button-prev,
+    &-button-next {
+        padding: 0 30px;
+        width: 14px;
+        height: 12px;
+        cursor: pointer;
+        display: flex;
+        color: $green;
+    }
+}

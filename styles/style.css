@@ -153,7 +153,15 @@ input::placeholder {
 .hero__info {
   width: 50%;
   min-width: 530px;
-  padding-right: 35px;
+  padding: 0 60px;
+}
+.hero__info-2 {
+  width: 50%;
+  padding: 20px 50px;
+}
+.hero__info-3 {
+  width: 50%;
+  padding: 65px 50px;
 }
 .hero__img {
   width: 50%;
@@ -170,6 +178,18 @@ input::placeholder {
   color: #59BE29;
   margin-bottom: 35px;
 }
+.hero__title-2 {
+  font: 600 121px/0.9 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  color: #59BE29;
+  margin-bottom: 35px;
+}
+.hero__title-3 {
+  font: 600 121px/0.9 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  color: #59BE29;
+  margin-bottom: 35px;
+}
 .hero__descr {
   margin-bottom: 25px;
 }
@@ -181,21 +201,33 @@ input::placeholder {
 }
 .hero__img-wrap {
   position: absolute;
-  width: 150%;
+  width: 100%;
   z-index: -1;
-  top: 50%;
-  right: -27%;
+  top: 60%;
+  right: -5%;
   transform: translateY(-50%);
+}
+.hero__img-wrap-2 {
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  right: -15%;
+}
+.hero__img-wrap-3 {
+  position: absolute;
+  width: 100%;
+  top: 5%;
+  right: -10%;
 }
 .hero__decor {
   width: 100%;
 }
-.hero__decor-1, .hero__decor-2, .hero__decor-3 {
+.hero__decor-1, .hero__decor-2, .hero__decor-3, .hero__decor-4 .hero__decor-5 {
   position: absolute;
 }
 .hero__decor-1 {
   top: 15%;
-  right: 17%;
+  right: 15%;
   max-width: 119px;
   max-height: 83px;
 }
@@ -269,6 +301,37 @@ input::placeholder {
     max-height: 55px;
   }
 }
+.swiper-wrapper {
+  display: flex;
+}
+.swiper-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 70px;
+}
+.swiper-pagination {
+  width: auto;
+  line-height: 0;
+  padding: 0px 50px;
+  color: #59BE29;
+}
+.swiper-pagination-bullet {
+  width: 75px;
+  height: 5px;
+  background-color: #59BE29;
+  border-radius: 10px;
+  margin: 0 1.5px;
+}
+.swiper-button-prev, .swiper-button-next {
+  padding: 0 30px;
+  width: 14px;
+  height: 12px;
+  cursor: pointer;
+  display: flex;
+  color: #59BE29;
+}
+
 .stats {
   padding: 60px 0;
 }

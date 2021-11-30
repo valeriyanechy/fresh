@@ -8,7 +8,17 @@
     &__info {
         width: 50%;
         min-width: 530px;
-        padding-right: 35px;
+        padding: 0 60px;
+    }
+
+    &__info-2 {
+        width: 50%;
+        padding: 20px 50px;
+    }
+
+    &__info-3 {
+        width: 50%;
+        padding: 65px 50px;
     }
 
     &__img {
@@ -25,6 +35,20 @@
 
     &__title {
         font: $h1-font;
+        color: $primary-color;
+        margin-bottom: 35px;
+    }
+
+    &__title-2 {
+        font: $h1-font;
+        font-size: 100px;
+        color: $primary-color;
+        margin-bottom: 35px;
+    }
+
+    &__title-3 {
+        font: $h1-font;
+        font-size: 100px;
         color: $primary-color;
         margin-bottom: 35px;
     }
@@ -46,11 +70,25 @@
 
     &__img-wrap {
         position: absolute;
-        width: 150%;
+        width: 100%;
         z-index: -1;
-        top: 50%;
-        right: -27%;
+        top: 60%;
+        right: -5%;
         transform: translateY(-50%);
+    }
+
+    &__img-wrap-2 {
+        position: absolute;
+        width: 100%;
+        top: 20%;
+        right: -15%;
+    }
+
+    &__img-wrap-3 {
+        position: absolute;
+        width: 100%;
+        top: 5%;
+        right: -10%;
     }
 
     &__decor {
@@ -59,13 +97,15 @@
 
     &__decor-1,
     &__decor-2,
-    &__decor-3 {
+    &__decor-3,
+    &__decor-4
+    &__decor-5 {
         position: absolute;
     }
 
     &__decor-1 {
         top: 15%;
-        right: 17%;
+        right: 15%;
         max-width: 119px;
         max-height: 83px;
     }
