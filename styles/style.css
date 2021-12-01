@@ -939,5 +939,11 @@ input::placeholder {
     max-height: 210px;
   }
 }
+#btn-back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 35px;
+  display: none;
+}
 
 /*# sourceMappingURL=style.css.map */
