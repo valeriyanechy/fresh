@@ -137,18 +137,18 @@
 
         &__decor-1 {
             right: 20%;
-            max-width: 100px;
+            max-width: 75px;
             max-height: 80px;
         }
 
         &__decor-2 {
             left: 20%;
-            max-width: 95px;
+            max-width: 65px;
             max-height: 50px;
         }
 
         &__decor-3 {
-            max-width: 150px;
+            max-width: 95px;
             max-height: 100px;
         }
     }
@@ -160,12 +160,20 @@
             width: 50%;
         }
 
+        &__info-2, &__info-3 {
+            max-width: 400px;
+        }
+
         &__label {
             font: $h3-font;
         }
 
         &__title {
             font: 600 85px/0.9 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
+        }
+
+        &__title-2, &__title-3 {
+            font-size: 70px;
         }
 
         &__descr {
@@ -194,6 +202,15 @@
         }
 
         &__decor-3 {
+            max-width: 965x;
+            max-height: 55px;
+        }
+
+        &__decor-4 {
+            max-height: 220px;
+        }
+
+        &__decor-5 {
             max-width: 965x;
             max-height: 55px;
         }
