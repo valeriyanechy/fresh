@@ -8,44 +8,43 @@
     overflow: auto; 
     background-color: rgba(0,0,0,0.4); 
     overflow-y: hidden;
-}
 
-.modal__content {
-    background-color: $white;
-    margin: 15% auto; 
-    padding: 20px 30px 30px 60px;
-    border: 1px solid $green;
-    border-radius: 20px;
-    box-shadow: inset -5px -5px 10px #09411257;
-    width: 50%; 
+    &__content {
+        background-color: $white;
+        margin: 15% auto; 
+        padding: 20px 30px 30px 60px;
+        border: 1px solid $green;
+        border-radius: 20px;
+        box-shadow: inset -5px -5px 10px #09411257;
+        width: 50%; 
     }
 
-.modal__title {
-    font-size: 35px;
-}
+    &__title {
+        font-size: 35px;
+    }
 
-.modal__text {
-    color: $black;
-    font-size: 20px;
-    max-width: 458px;
-    margin-bottom: 40px;
+    &__text {
+        color: $black;
+        font-size: 20px;
+        max-width: 450px;
+        margin-bottom: 40px;
+    }    
 }
 
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
     color: $green;
-    text-decoration: none;
-    cursor: pointer;
+    float: right;
+    font-size: 25px;
+    font-weight: 700;
+
+    &:hover, &:focus {
+        color: $green;
+        text-decoration: none;
+        cursor: pointer;
+    }
 }
 
-.row {
+.user-value-2 {
     margin-bottom: 20px;
 }
 
