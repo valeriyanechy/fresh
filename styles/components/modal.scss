@@ -1,5 +1,5 @@
 .modal {
-    position: fixed; 
+    position: fixed;
     z-index: 99; 
     left: 0;
     top: 0;
@@ -15,7 +15,7 @@
         padding: 20px 30px 30px 60px;
         border: 1px solid $green;
         border-radius: 20px;
-        box-shadow: inset -5px -5px 10px #09411257;
+        box-shadow: inset 0px 0px 5px #09411257;
         width: 50%; 
     }
 
@@ -54,11 +54,11 @@ input {
     color: $black;
     display: block;
     width: 50%;
-    height: 37px;
+    height: 40px;
     border: 1px solid  $white;
     border-radius: 4px;
     padding: 0 12px;
-    transition: all .3s;
+    transition: $trs;
     outline: none;
 }
 
